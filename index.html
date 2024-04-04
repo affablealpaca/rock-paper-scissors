@@ -2,10 +2,55 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors with UI</title>
+    <link rel="stylesheet" href="styles.css" />
+  <head>
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rock-Paper-Scissors</title>
   </head>
   <body>
+    <header><h1>ROCK PAPER SCISSORS</h1></header>
+    <main>
+      <div id="gameSection">
+        <button class="playerButton" data-choice="rock" id="rock-button">
+          <img src="images/rock.png" class="img-icons" />
+        </button>
+
+        <button class="playerButton" data-choice="paper" id="paper-button">
+          <img src="images/paper.png" class="img-icons" />
+        </button>
+
+        <button
+          class="playerButton"
+          data-choice="scissors"
+          id="scissors-button"
+        >
+          <img src="images/scissors.png" class="img-icons" />
+        </button>
+      </div>
+
+      <div id="gameCounter">
+        <div id="scores-div">
+          <p id="player-score"></p>
+          <p id="computer-score"></p>
+        </div>
+        <div id="results-div">
+          <p id="results"></p>
+        </div>
+      </div>
+
+      <div id="resetSection">
+        <button id="resetButton">RESET</button>
+      </div>
+    </main>
+    <footer>
+      Made by
+      <a href="https://github.com/affablealpaca"> A.A </a> &#129312;
+    </footer>
+
     <script src="rps.js"></script>
   </body>
 </html>

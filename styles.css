@@ -1,0 +1,104 @@
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+header,
+footer {
+  background-color: rgb(25, 25, 25);
+  color: white;
+  padding: 1vh;
+  text-align: center;
+  font-family: Arial;
+}
+
+header {
+  font-size: 2vh;
+  font-weight: bold;
+}
+
+footer {
+  padding: 2vh 0;
+  font-size: 1.5vh;
+}
+
+main {
+  flex: 1;
+  background-color: lightslategray;
+  display: flex;
+  flex-direction: column;
+}
+
+main > * {
+  flex: 1;
+  background-color: lightslategray;
+}
+
+#gameSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2vh;
+  flex-wrap: wrap;
+  background-color: lightslategray;
+}
+
+.playerButton {
+  background-color: grey;
+  width: 10vh;
+  height: 10vh;
+  max-width: 200px;
+  max-height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.playerButton img {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  border-radius: 20%;
+}
+
+#gameCounter {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#results-div {
+  white-space: pre-line;
+}
+
+#scores-div,
+#results-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 2vh;
+  font-weight: bold;
+  gap: 2vh;
+  background-color: lightslategray;
+}
+
+#resetSection {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: lightslategray;
+}
+
+#resetButton {
+  font-size: 2vh;
+  border: none;
+  padding: 1vh 2vh;
+  border-radius: 25%;
+  cursor: pointer;
+  background-color: lightcoral;
+}
